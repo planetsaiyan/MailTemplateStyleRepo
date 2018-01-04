@@ -1,7 +1,8 @@
 <mjml>
   <mj-head>
     <mj-attributes>
-      <mj-text font-size="16px" align="center"/>
+      <!-- <mj-text font-size="16px" align="center"/> -->
+      <mj-text align="center"/>
       <mj-class name="sm-white-text" font-size="14px" color="#fff"/>
       <mj-class name="bg-color-darkgray" background-color="darkgray"/>
       <mj-class name="bg-color-lightgray" background-color="lightgray"/>
@@ -47,24 +48,128 @@
           </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section full-width="100%">
+
+<!-- 1 -->
+      <mj-section background-color="#fff" padding-bottom="20" padding-top="10">
+              <mj-column vertical-align="bottom">
+                <mj-image src="http://191n.mj.am/img/191n/3s/x4v.jpg" alt="Chesterk tank" align="center" border="none" width="209" padding-left="0" padding-right="0" padding-bottom="20" padding-top="30">
+
+                </mj-image>
+                <mj-text font-weight="bold" align="center" color="#000" font-size="15" padding-left="25" padding-right="25" padding-bottom="0" padding-top="0">
+                  <p>CHESTERK TANK</p>
+                  <p style="color: rgb(250, 135, 57);">15&#x20AC;</p>
+                </mj-text>
+                <mj-button background-color="#fa8739" color="#fff" font-size="13" align="center" padding="15px 30px" border-radius="3px" href="https://mjml.io" padding-bottom="10" padding-top="0">
+                  BUY NOW
+                </mj-button>
+              </mj-column>
+              <mj-column vertical-align="bottom">
+                <mj-image src="http://191n.mj.am/img/191n/3s/x4g.jpg" alt="Beyond backpack" align="center" border="none" width="178" padding-left="0" padding-right="0" padding-bottom="20" padding-top="30">
+
+                </mj-image>
+                <mj-text font-weight="bold" align="center" color="#000" font-size="15" padding-left="25" padding-right="25" padding-bottom="0" padding-top="0">
+                  <p>BEYOND BACKPACK</p>
+                  <p style="color: rgb(250, 135, 57);">20&#x20AC;</p>
+                </mj-text>
+
+                <mj-button background-color="#fa8739" color="#fff" font-size="13" align="center" padding="15px 30px" border-radius="3px" href="https://mjml.io" padding-bottom="10" padding-top="0">
+                  BUY NOW
+                </mj-button>
+              </mj-column>
+              <mj-column vertical-align="bottom">
+                <mj-image src="http://191n.mj.am/img/191n/3s/x46.jpg" alt="Jensen shorts" align="center" border="none" width="182" padding-left="0" padding-right="0" padding-bottom="20" padding-top="30">
+
+                </mj-image>
+                <mj-text font-weight="bold" align="center" color="#000" font-size="15" padding-left="25" padding-right="25" padding-bottom="0" padding-top="0">
+                  <p>JENSEN SHORTS</p>
+                  <p style="color: rgb(250, 135, 57);">28&#x20AC;</p>
+                </mj-text>
+                <mj-button background-color="#fa8739" color="#fff" font-size="13" align="center" padding="15px 30px" border-radius="3px" href="https://mjml.io" padding-bottom="10" padding-top="0">
+                  BUY NOW
+                </mj-button>
+              </mj-column>
+            </mj-section>
+
+<!-- 2 -->
+      <mj-section>
         <mj-column border="1px dashed blue">
-          <mj-image src="img/dhs/sample-house.png" padding="0px 10px" width="200px" border="1px solid lime"/>
+          <mj-image src="img/dhs/w800x533.jpg" width="400" border="none" padding="0"/>
+        </mj-column>
+        <mj-column>
+          <mj-image src="img/dhs/w800x533.jpg" width="400" alt="Jensen shorts" border="none" padding="0">
+          </mj-image>
+        </mj-column>
+        <mj-column border="1px dashed blue">
+          <mj-image src="img/dhs/w800x533.jpg" height="400" border="1px solid lime" padding="0"/>
+        </mj-column>
+      </mj-section>
+
+<!-- 3 -->
+      <mj-section>
+        <mj-column border="1px dashed blue">
+          <mj-image src="http://via.placeholder.com/250x400" border="none" padding-left="0" padding-right="0" padding-bottom="0" padding-top="0"/>
           <mj-text mj-class="sm-white-text" padding="0" container-background-color="orange">
             <p style="background-color:darkgray;padding:0;margin:0 auto;width:180px;">AA</p>
           </mj-text>
         </mj-column>
-        <mj-column border="1px dashed blue">
-          <mj-image src="img/dhs/sample-house.png" padding="0px 10px" width="200px" border="1px solid lime"/>
+        <mj-column>
+          <mj-image src="http://via.placeholder.com/250x400" border="none" padding-left="0" padding-right="0" padding-bottom="0" padding-top="0"/>
           <mj-text mj-class="sm-white-text" padding="0" container-background-color="aqua">
             <p style="background-color:darkgray;padding:0;margin:0 auto;width:180px;">BB</p>
           </mj-text>
         </mj-column>
         <mj-column border="1px dashed blue">
-            <mj-image src="img/dhs/sample-house.png" padding="0px 10px" width="200px" border="1px solid lime"/>
+            <mj-image src="http://via.placeholder.com/250x400" border="1px solid lime" padding-left="0" padding-right="0" padding-bottom="0" padding-top="0"/>
             <mj-text mj-class="sm-white-text" padding="0" container-background-color="pink">
               <p style="background-color:darkgray;padding:0;margin:0 auto;width:180px;">CC</p>
             </mj-text>
+        </mj-column>
+      </mj-section>
+
+<!-- 4 -->
+      <mj-section>
+        <mj-column border="1px dashed blue">
+          <mj-image src="http://via.placeholder.com/400x400" border="none" padding-left="0" padding-right="0" padding-bottom="0" padding-top="0"/>
+        </mj-column>
+        <mj-column border="1px dashed blue">
+          <mj-image src="http://via.placeholder.com/400x400" border="1px solid lime" padding-left="0" padding-right="0" padding-bottom="0" padding-top="0"/>
+        </mj-column>
+        <mj-column border="1px dashed blue">
+            <mj-image src="http://via.placeholder.com/400x400" border="1px solid lime" padding-left="0" padding-right="0" padding-bottom="0" padding-top="0"/>
+        </mj-column>
+      </mj-section>
+
+      <!-- 5 -->
+      <mj-section background-color="#000000" background-url="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1.r2BG.jpg" background-repeat="no-repeat" padding-top="80" padding-bottom="0" padding-left="20">
+        <mj-column>
+          <mj-spacer height="15px" />
+          <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_R2text.png" width="196" alt="Buy R2D2" href="https://www.sphero.com/starwars/r2d2"></mj-image>
+          <mj-text font-size="14" line-height="2" align="left" color="#ffffff" font-family="Helvetica Neue">
+            This is the Droid™ you’re looking for. R2-D2™ is an Astromech Droid™ in the Rebel Alliance from a galaxy far, far away.... The specialized tech in R2-D2 is unlike any other Astromech Droid, making it as authentic as the trusty Artoo you’ve come to know
+            and love.
+          </mj-text>
+          <mj-spacer height="5px" />
+          <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_R2_button.png" width="129" alt="Buy R2-D2" href="https://store.sphero.com/products/r2-d2"></mj-image>
+        </mj-column>
+        <mj-column>
+          <mj-spacer height="45px" />
+          <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_R2-D2.png" href="https://www.sphero.com/starwars/r2d2" alt="Get the new R2-D2" width="450" padding="0"></mj-image>
+        </mj-column>
+      </mj-section>
+
+      <!-- 6 -->
+      <mj-section background-color="#000000"background-repeat="no-repeat" padding-top="80" padding-bottom="0" padding-left="20">
+        <mj-column>
+          <mj-spacer height="45px" />
+          <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_R2-D2.png" href="https://www.sphero.com/starwars/r2d2" alt="Get the new R2-D2" width="450" padding="0"></mj-image>
+        </mj-column>
+        <mj-column>
+          <mj-spacer height="45px" />
+          <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_R2-D2.png" href="https://www.sphero.com/starwars/r2d2" alt="Get the new R2-D2" width="450" padding="0"></mj-image>
+        </mj-column>
+        <mj-column>
+          <mj-spacer height="45px" />
+          <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_R2-D2.png" href="https://www.sphero.com/starwars/r2d2" alt="Get the new R2-D2" width="450" padding="0"></mj-image>
         </mj-column>
       </mj-section>
 
