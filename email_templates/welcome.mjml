@@ -12,7 +12,7 @@
     <mj-container background-color="#fff">
       <mj-section padding-bottom="0">
           <mj-column width="50%">
-            <mj-text padding-top="5px" font-size="18px" color="gray">
+            <mj-text padding-top="5px" font-size="20px" color="gray">
               Welcome to
             </mj-text>
           </mj-column>
@@ -22,14 +22,14 @@
       </mj-section>
       <mj-section padding-top="0px" padding-bottom="0px">
         <mj-column>
-          <mj-text color="gray">
+          <mj-text color="gray" font-size="16px">
             Your new home starts with a great plan!
           </mj-text>
         </mj-column>
       </mj-section>
       <mj-section background-color="lightgray" padding-top="5px" padding-bottom="5px">
         <mj-column>
-          <mj-text>
+          <mj-text font-size="14px">
             <strong>Search</strong> our inventory of over 30,000 home plans<br/>
             <strong>Browse</strong> our cureated collections and designers<br/>
             <strong>Customize</strong> any plan to make it your dream home
@@ -43,7 +43,7 @@
       </mj-section>
       <mj-section padding="0">
         <mj-column>
-          <mj-text color="rgb(123,157,41)">
+          <mj-text color="rgb(123,157,41)" font-size="14px">
             Browse a few of our favorite collections:
           </mj-text>
         </mj-column>
