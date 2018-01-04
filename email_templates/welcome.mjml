@@ -1,0 +1,82 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-text font-size="16px" align="center"/>
+      <mj-class name="sm-white-text" font-size="14px" color="#fff"/>
+      <mj-class name="bg-color-darkgray" background-color="darkgray"/>
+      <mj-class name="bg-color-lightgray" background-color="lightgray"/>
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-container background-color="#fff">
+      <mj-section padding-bottom="0">
+          <mj-column width="40%">
+            <mj-text padding-right="0" font-size="18px" line-height="44px" align="right" color="gray">
+              Welcome to
+            </mj-text>
+          </mj-column>
+          <mj-column width="60%">
+            <mj-image src="img/dhs/dhs_logo.png" padding-left="0"/>
+          </mj-column>
+      </mj-section>
+      <mj-section padding-top="0">
+        <mj-column>
+          <mj-text color="gray">
+            Your new home starts with a great plan!
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="lightgray">
+        <mj-column>
+          <mj-text>
+            <strong>Search</strong> our inventory of over 30,000 home plans<br/>
+            <strong>Browse</strong> our cureated collections and designers<br/>
+            <strong>Customize</strong> any plan to make it your dream home
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="0" padding-top="2">
+        <mj-column>
+          <mj-divider width="100%" padding="0px" border-width="8px" border-color="darkgray"/>
+        </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column>
+          <mj-text>
+            Browse a few of our favorite collections:
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section full-width="100%">
+        <mj-column border="1px dashed blue">
+          <mj-image src="img/dhs/sample-house.png" padding="0px 10px" width="200px" border="1px solid lime"/>
+          <mj-text mj-class="sm-white-text" padding="0" container-background-color="orange">
+            <p style="background-color:darkgray;padding:0;margin:0 auto;width:180px;">AA</p>
+          </mj-text>
+        </mj-column>
+        <mj-column border="1px dashed blue">
+          <mj-image src="img/dhs/sample-house.png" padding="0px 10px" width="200px" border="1px solid lime"/>
+          <mj-text mj-class="sm-white-text" padding="0" container-background-color="aqua">
+            <p style="background-color:darkgray;padding:0;margin:0 auto;width:180px;">BB</p>
+          </mj-text>
+        </mj-column>
+        <mj-column border="1px dashed blue">
+            <mj-image src="img/dhs/sample-house.png" padding="0px 10px" width="200px" border="1px solid lime"/>
+            <mj-text mj-class="sm-white-text" padding="0" container-background-color="pink">
+              <p style="background-color:darkgray;padding:0;margin:0 auto;width:180px;">CC</p>
+            </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="lightgray">
+        <mj-column>
+          <mj-text font-size="15px">
+            If you have questions, please contact: <span style="color:darkred;">{{sales@dreamhomesource}}</span><br/>
+            <span style="font-weight:600">{{Dream Home Source 2017}} - Questionas? call {{1-800-555-1212}}</span><br/>
+            <span style="color:#fff">{{Copyright 2017, Hanley Wood LLC. All rights reserved}}</span><br/>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-container>
+  </mj-body>
+</mjml>
