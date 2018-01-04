@@ -43,7 +43,7 @@
       </mj-section>
       <mj-section padding="0">
         <mj-column>
-          <mj-text>
+          <mj-text color="rgb(123,157,41)">
             Browse a few of our favorite collections:
           </mj-text>
         </mj-column>
@@ -54,30 +54,30 @@
         <mj-column>
           <mj-image src="img/dhs/w800x533.jpg" border="none" padding-left="5" padding-right="5" padding-top="5" padding-bottom="0"/>
           <mj-text mj-class="sm-white-text" padding-left="5" padding-right="5" padding-bottom="0" padding-top="0">
-            <p style="background-color:darkgray;padding:0;margin:0 auto;width:190px;">Exclusive Plans</p>
+            <p style="background-color:rgb(145,150,153);padding:0;margin:0 auto;width:190px;">Exclusive Plans</p>
           </mj-text>
         </mj-column>
         <mj-column>
           <mj-image src="img/dhs/w800x533.jpg" border="none" padding-left="5" padding-right="5" padding-top="5" padding-bottom="0">
           </mj-image>
           <mj-text mj-class="sm-white-text" padding-left="5" padding-right="5" padding-bottom="0" padding-top="0">
-            <p style="background-color:darkgray;padding:0;margin:0 auto;width:190px;">Southern Plans</p>
+            <p style="background-color:rgb(145,150,153);padding:0;margin:0 auto;width:190px;">Southern Plans</p>
           </mj-text>
         </mj-column>
         <mj-column>
           <mj-image src="img/dhs/w800x533.jpg" padding-left="5" padding-right="5" padding-top="5" padding-bottom="0"/>
           <mj-text mj-class="sm-white-text" padding-left="5" padding-right="5" padding-bottom="0" padding-top="0">
-            <p style="background-color:darkgray;padding:0;margin:0 auto;width:190px;">Award Winning Plans</p>
+            <p style="background-color:rgb(145,150,153);padding:0;margin:0 auto;width:190px;">Award Winning Plans</p>
           </mj-text>
         </mj-column>
       </mj-section>
 
       <mj-section background-color="lightgray">
         <mj-column>
-          <mj-text font-size="15px">
-            If you have questions, please contact: <span style="color:darkred;">{{sales@dreamhomesource}}</span><br/>
-            <span style="font-weight:600">{{Dream Home Source 2017}} - Questions? call {{1-800-555-1212}}</span><br/>
-            <span style="color:#fff">{{Copyright 2017, Hanley Wood LLC. All rights reserved}}</span><br/>
+          <mj-text padding="0">
+            If you have questions, please contact: <span style="color:rgb(195,109,27);font-weight:500;">{{sales@dreamhomesource}}</span><br/>
+            <span style="font-weight:500">{{Dream Home Source 2017}} - Questions? call {{1-800-555-1212}}</span><br/>
+            {{Copyright 2017, Hanley Wood LLC. All rights reserved}}
           </mj-text>
         </mj-column>
       </mj-section>
