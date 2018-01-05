@@ -9,7 +9,7 @@
   </mj-head>
   <mj-body>
     <mj-container background-color="#fff">
-      <mj-include path="./header" />
+      <mj-include path="./welcome-header" />
       <mj-section padding-top="0px" padding-bottom="0px">
         <mj-column>
           <mj-text color="gray" font-size="16px">
