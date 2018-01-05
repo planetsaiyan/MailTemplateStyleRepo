@@ -11,6 +11,7 @@
   <mj-body>
 
     <mj-container background-color="hotpink">
+      <mj-include path="./header" />
     <mj-section>
         <mj-column>
           <mj-text color="white">
