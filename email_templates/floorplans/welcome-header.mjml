@@ -1,0 +1,10 @@
+<mj-section padding-bottom="0" padding-left="40px" padding-right="40px">
+    <mj-column width="30%">
+      <mj-text height="100%" line-height="28px" padding-top="5px" padding-left="0px" padding-right="0px" font-size="20px" color="gray">
+        Welcome to
+      </mj-text>
+    </mj-column>
+    <mj-column width="70%">
+      <mj-image src="img/dhs/fp_logo.png" padding-top="5px" padding-left="0px" padding-right="0px"/>
+    </mj-column>
+</mj-section>
