@@ -1,0 +1,38 @@
+<mjml>
+  <mj-body>
+    <mj-container background-color="#fff">
+      <mj-include path="./navbar" />
+      <mj-include path="./logo-header" />
+      <mj-section>
+        <mj-column>
+          <mj-text align="center" font-size="20px">
+            Your Cost-To-Build Report is ready to download!
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-include path="./order-details-partial" />
+      <mj-section>
+        <mj-column width="15%">
+
+        </mj-column>
+        <mj-column width="70%">
+          <mj-text>
+            <strong>Product Name -</strong> <span style="color:#919699">Plan#{{planNum}}</span><br/>
+            <strong>Order Number -</strong> <span style="color:#919699">{{orderNum}}</span><br/>
+          </mj-text>
+        </mj-column>
+        <mj-column width="15%">
+
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="#E0E2E3" padding-bottom="0px">
+        <mj-column>
+          <mj-button background-color="#7B9D29" color="white"  padding="0">
+            Download Report
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-include path="./footer" />
+    </mj-container>
+  </mj-body>
+</mjml>

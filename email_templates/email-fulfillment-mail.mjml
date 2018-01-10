@@ -1,0 +1,33 @@
+<mjml>
+  <mj-body>
+    <mj-container background-color="#fff">
+      <mj-include path="./navbar" />
+      <mj-include path="./logo-header" />
+      <mj-section>
+        <mj-column>
+          <mj-text align="center" font-size="20px">
+            Your order has been emailed!
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-include path="./order-details-partial" />
+      <mj-section>
+        <mj-column width="15%">
+
+        </mj-column>
+        <mj-column width="70%">
+          <mj-text>
+            <strong>Order -</strong> {{orderId}}<br/>
+            <strong>Email -</strong> {{hhy@hanleywood.com}}<br/>
+          </mj-text>
+          <mj-divider border-width="5px" />
+        </mj-column>
+        <mj-column width="15%">
+
+        </mj-column>
+    </mj-section>
+    <mj-include path="./order-price-info-partial" />
+<mj-include path="./footer" />
+    </mj-container>
+  </mj-body>
+</mjml>

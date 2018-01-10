@@ -1,0 +1,42 @@
+<mjml>
+  <mj-body>
+    <mj-container background-color="#fff">
+      <mj-include path="./navbar" />
+      <mj-include path="./logo-header" />
+      <mj-section>
+        <mj-column>
+          <mj-text align="center" font-size="20px">
+            Your order has been shipped!
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-include path="./order-details-partial" />
+      <mj-section>
+        <mj-column width="10%">
+
+        </mj-column>
+        <mj-column width="80%">
+          <mj-text>
+            <strong>Order Number -</strong> <span style="color:#919699">#{{orderNum}}</span><br/>
+            <strong>Shipping Date -</strong> <span style="color:#919699">{{shippingDate}} - Order Date - {{orderDate}}</span><br/>
+            <strong>Shipping Via -</strong> <span style="color:#919699">{{shipVia}}</span><br/>
+            <strong>Tracking Number -</strong> <span style="color:#919699">{{trackingNum}}</span><br/>
+          </mj-text>
+          <mj-divider border-width="5px" />
+        </mj-column>
+        <mj-column width="10%">
+
+        </mj-column>
+      </mj-section>
+      <mj-include path="./order-price-info-partial" />
+      <mj-section background-color="#E0E2E3" padding-bottom="0px">
+        <mj-column>
+          <mj-button background-color="#7B9D29" color="white"  padding="0">
+            Track my order
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-include path="./footer" />
+    </mj-container>
+  </mj-body>
+</mjml>

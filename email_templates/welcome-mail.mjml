@@ -9,6 +9,7 @@
   </mj-head>
   <mj-body>
     <mj-container background-color="#fff">
+      <mj-include path="./navbar" />
       <mj-include path="./welcome-header" />
       <mj-section padding-top="0px" padding-bottom="0px">
         <mj-column>
@@ -17,7 +18,7 @@
           </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section background-color="lightgray" padding-top="5px" padding-bottom="5px">
+      <mj-section background-color="rgb(224,226,227)" padding-top="5px" padding-bottom="5px">
         <mj-column>
           <mj-text font-size="14px">
             <strong>Search</strong> our inventory of over 30,000 home plans<br/>
@@ -28,7 +29,7 @@
       </mj-section>
       <mj-section padding="0" padding-top="2">
         <mj-column>
-          <mj-divider width="100%" padding="0px" border-width="8px" border-color="darkgray"/>
+          <mj-divider width="100%" padding="0px" border-width="8px" border-color="#919699"/>
         </mj-column>
       </mj-section>
       <mj-section padding="0">
@@ -41,20 +42,20 @@
 
       <mj-section padding-top="0">
         <mj-column>
-          <mj-image src="img/dhs/w800x533.jpg" border="none" padding-left="5" padding-right="5" padding-top="5" padding-bottom="0"/>
+          <mj-image src="img/w800x533.jpg" border="none" padding-left="5" padding-right="5" padding-top="5" padding-bottom="0"/>
           <mj-text mj-class="sm-white-text" padding-left="5" padding-right="5" padding-bottom="0" padding-top="0">
             <p style="background-color:rgb(145,150,153);padding:0;margin:0 auto;width:190px;">Exclusive Plans</p>
           </mj-text>
         </mj-column>
         <mj-column>
-          <mj-image src="img/dhs/w800x533.jpg" border="none" padding-left="5" padding-right="5" padding-top="5" padding-bottom="0">
+          <mj-image src="img/w800x533.jpg" border="none" padding-left="5" padding-right="5" padding-top="5" padding-bottom="0">
           </mj-image>
           <mj-text mj-class="sm-white-text" padding-left="5" padding-right="5" padding-bottom="0" padding-top="0">
             <p style="background-color:rgb(145,150,153);padding:0;margin:0 auto;width:190px;">Southern Plans</p>
           </mj-text>
         </mj-column>
         <mj-column>
-          <mj-image src="img/dhs/w800x533.jpg" padding-left="5" padding-right="5" padding-top="5" padding-bottom="0"/>
+          <mj-image src="img/w800x533.jpg" padding-left="5" padding-right="5" padding-top="5" padding-bottom="0"/>
           <mj-text mj-class="sm-white-text" padding-left="5" padding-right="5" padding-bottom="0" padding-top="0">
             <p style="background-color:rgb(145,150,153);padding:0;margin:0 auto;width:190px;">Award Winning Plans</p>
           </mj-text>
