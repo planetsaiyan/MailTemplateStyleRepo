@@ -18,7 +18,7 @@
           </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section background-color="#919699">
+      <mj-section background-color="#919699" padding-bottom="10px" padding-top="10px">
         <mj-column>
           <mj-text color="#fff">
             <span style="font-size:20px;">Thank you for your order!</span><br/>

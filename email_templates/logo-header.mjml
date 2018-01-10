@@ -1,6 +1,6 @@
 <mj-section>
   <mj-column>
     <mj-image src="img/dhs_logo.png" width="264px"/>
-    <mj-divider border-width="5px" border-color="#E0E2E3" padding-left="0px" padding-righ="0px"/>
+    <mj-divider border-width="5px" border-color="#E0E2E3" padding-left="0px" padding-right="0px"/>
   </mj-column>
 </mj-section>

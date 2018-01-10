@@ -1,6 +1,6 @@
-<mj-section background-color="#919699">
+<mj-section background-color="#919699" padding-bottom="10px" padding-top="10px">
   <mj-column>
-    <mj-text align="center" color="#fff">
+    <mj-text padding="0px" align="center" color="#fff">
       Please find your order details below.
     </mj-text>
   </mj-column>
