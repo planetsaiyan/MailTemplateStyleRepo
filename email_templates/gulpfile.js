@@ -14,12 +14,9 @@ gulp.task('javaMjmlWatch', function() {
     .pipe(mjml())
     .pipe(gulp.dest('./mjml-output/mjml/html-output'));
   })
-})
+});
 
 gulp.task('jsMjmlWatch', function() {
-  var StorefrontDHS = {
-    "myblue": "blue"
-  };
   gulp.watch('./handlebarsjs/mjmlTemplates/*.mjml')
     .on('change', function() {
       gulp.src('./handlebarsjs/mjmlTemplates/*.mjml')
@@ -35,12 +32,15 @@ gulp.task('sampleJsDataTest', function() {
       console.log(path)
       var sourceTmpl = path;
       sampleDataBind(sourceTmpl)
-      // gulp.src('./handlebarsjs/mjmlTemplates/*.html')
-      //   .pipe(sampleDataBind(tmpl))
-        // .pipe(mjml())
-        //.pipe(gulp.dest('./handlebarsjs/mjmlTemplates/html-output'));
     })
-})
+});
+
+gulp.watch('./handlebarsjs/mjmlTemplates/test/*.html')
+  .on('change', function() {
+    gulp.src('./handlebarsjs/mjmlTemplates/test/*.html')
+    .pipe(mjml())
+    .pipe(gulp.dest('./handlebarsjs/mjmlTemplates/test/html-output'));
+  });
 
 function sampleDataBind(srcTmplPath) {
   console.log('sampleDataBind...srcTmplPath:');
@@ -54,6 +54,7 @@ function sampleDataBind(srcTmplPath) {
     var mjmlTemplate = handlebars.compile(_data);
     var mjmlWithStyleBind = mjmlTemplate(sampleData);
     console.log(mjmlWithStyleBind);
+    fs.writeFile('./handlebarsjs/mjmlTemplates/test/jsDataBindTmp.html', mjmlWithStyleBind, function(error) {})
   })
 }
 
