@@ -1,0 +1,12 @@
+<mj-navbar background-color="rgb(224,226,227)" padding="0">
+  <mj-column>
+    <mj-inline-links base-url="https://mjml.io" ico-color="#fa8739">
+      <mj-link padding-top="6px" padding-bottom="6px" href="https://mjml.io" color="#000000">HOME</mj-link>
+      <mj-link padding-top="6px" padding-bottom="6px" href="https://mjml.io" color="#000000">SEARCH</mj-link>
+      <mj-link padding-top="6px" padding-bottom="6px" href="https://mjml.io" color="#000000">STYLES</mj-link>
+      <mj-link padding-top="6px" padding-bottom="6px" href="https://mjml.io" color="#000000">COLLECTIONS</mj-link>
+      <mj-link padding-top="6px" padding-bottom="6px" href="https://mjml.io" color="#000000">BLOG</mj-link>
+      <mj-link padding-top="6px" padding-bottom="6px" href="https://mjml.io" color="#000000">DESGINERS</mj-link>
+    </mj-inline-links>
+  </mj-column>
+</mj-navbar>

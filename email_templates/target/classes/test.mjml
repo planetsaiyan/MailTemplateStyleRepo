@@ -1,0 +1,21 @@
+<mjml>
+  <mj-body>
+    <mj-container background-color="{{name}}">
+      <mj-section>
+        <mj-column>
+          <mj-text>
+            email templates testing
+          </mj-text>
+          <mj-divider border-color="orange" />
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="{{myOrange}}">
+        <mj-column>
+          <mj-text>
+            orange background
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-container>
+  </mj-body>
+</mjml>

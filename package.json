@@ -9,6 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gulp-mjml": "^2.3.0",
     "mjml": "^3.3.5"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "handlebars": "^4.0.11"
   }
 }

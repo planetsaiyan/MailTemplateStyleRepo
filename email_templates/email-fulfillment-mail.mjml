@@ -11,14 +11,14 @@
         </mj-column>
       </mj-section>
       <mj-include path="./order-details-partial" />
-      <mj-section>
+      <mj-section padding="0px">
         <mj-column width="15%">
 
         </mj-column>
         <mj-column width="70%">
-          <mj-text>
-            <strong>Order -</strong> {{orderId}}<br/>
-            <strong>Email -</strong> {{hhy@hanleywood.com}}<br/>
+          <mj-text padding="0px">
+            <strong>Order -</strong> <span style="color:#919699">{{orderId}}</span><br/>
+            <strong>Email -</strong> <span>{{hhy@hanleywood.com}}</sapn><br/>
           </mj-text>
           <mj-divider border-width="5px" />
         </mj-column>
@@ -27,7 +27,7 @@
         </mj-column>
     </mj-section>
     <mj-include path="./order-price-info-partial" />
-<mj-include path="./footer" />
+    <mj-include path="./footer" />
     </mj-container>
   </mj-body>
 </mjml>
