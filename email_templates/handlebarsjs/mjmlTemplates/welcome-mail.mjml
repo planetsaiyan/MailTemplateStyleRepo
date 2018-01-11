@@ -8,7 +8,7 @@
     </mj-attributes>
   </mj-head>
   <mj-body>
-    <mj-container background-color="{{myblue}}">
+    <mj-container background-color="blue">
       <mj-include path="./common/navbar" />
       <mj-include path="./common/welcome-header" />
       <mj-section padding-top="0px" padding-bottom="0px">

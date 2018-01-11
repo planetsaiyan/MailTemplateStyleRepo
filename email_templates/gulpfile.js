@@ -23,7 +23,46 @@ gulp.task('jsMjmlWatch', function() {
         .pipe(mjml())
         .pipe(gulp.dest('./handlebarsjs/mjmlTemplates/html-output'));
     })
-})
+});
+
+gulp.task('mjmlJsDataBind', function() {
+  console.log('begin mjmlJsDataBind...');
+  gulp.watch('./handlebarsjs/mjmlTemplates/*.mjml')
+  .on('change', function(path) {
+    console.log(path)
+    var sourceTmpl = path;
+    mjmlJSONDataBind(sourceTmpl)
+  })
+});
+
+gulp.watch('./handlebarsjs/mjmlTemplates/*.mjml')
+.on('change', function() {
+  gulp.src('./handlebarsjs/mjmlTemplates/*.mjml')
+  .pipe(mjml())
+  .pipe(gulp.dest('./handlebarsjs/mjmlTemplates/html-output'));
+});
+
+function mjmlJSONDataBind(srcTmplPath) {
+  console.log('sampleDataBind...srcTmplPath:');
+  console.log(srcTmplPath);
+
+  var styleJSON = {
+      "items": [
+        {
+          "name": "Handlebars.java rocks!"
+        }
+      ],
+      "myblue": "blue"
+    };
+
+  fs.readFile(srcTmplPath, 'utf-8', function(err, _data){
+    console.log(_data);
+    var mjmlTemplate = handlebars.compile(_data);
+    var mjmlWithStyleBind = mjmlTemplate(styleJSON);
+    console.log(mjmlWithStyleBind);
+    fs.writeFile(srcTmplPath, mjmlWithStyleBind, function(error) {})
+  })
+}
 
 gulp.task('sampleJsDataTest', function() {
   console.log('begin sampleTest...');
