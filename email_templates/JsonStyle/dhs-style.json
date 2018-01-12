@@ -1,7 +1,8 @@
 {
   "header": {
     "navbar": {
-      "bgColor": "#E0E2E3"
+      "bgColor": "#E0E2E3",
+      "linkColor": "#000000"
     }
   },
   "footer": {},
