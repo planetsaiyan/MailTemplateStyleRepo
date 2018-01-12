@@ -6,8 +6,8 @@
   </mj-head>
   <mj-body>
     <mj-container background-color="{{colors.containerBackground}}">
-      <mj-include path="./navbar" />
-      <mj-include path="./welcome-header" />
+      <mj-include path="./common/navbar" />
+      <mj-include path="./common/welcome-header" />
       <mj-section padding-top="0px" padding-bottom="0px">
         <mj-column>
           <mj-text color="{{header.textColor}}" font-size="16px">
@@ -59,7 +59,7 @@
         </mj-column>
       </mj-section>
 
-      <mj-include path="./footer" />
+      <mj-include path="./common/footer" />
     </mj-container>
   </mj-body>
 </mjml>
