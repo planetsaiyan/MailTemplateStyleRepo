@@ -11,7 +11,7 @@
         </mj-column>
       </mj-section>
       <mj-include path="./order-details-partial" />
-      <mj-section padding="0px">
+      <mj-section padding-bottom="0px">
         <mj-column width="15%">
 
         </mj-column>
@@ -20,7 +20,7 @@
             <strong>Order -</strong> <span style="color:#919699">{{orderId}}</span><br/>
             <strong>Email -</strong> <span>{{hhy@hanleywood.com}}</sapn><br/>
           </mj-text>
-          <mj-divider border-width="5px" />
+          <mj-divider border-width="5px" padding-left="0px" padding-right="0px"/>
         </mj-column>
         <mj-column width="15%">
 
