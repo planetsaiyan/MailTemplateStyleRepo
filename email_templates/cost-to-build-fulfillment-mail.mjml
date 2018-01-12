@@ -25,9 +25,9 @@
 
         </mj-column>
       </mj-section>
-      <mj-section background-color="#E0E2E3" padding-bottom="0px">
+      <mj-section>
         <mj-column>
-          <mj-button background-color="#7B9D29" color="white"  padding="0">
+          <mj-button background-color="#7B9D29" color="white">
             Download Report
           </mj-button>
         </mj-column>
