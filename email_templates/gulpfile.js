@@ -2,6 +2,9 @@ var gulp = require('gulp');
 var mjml = require('gulp-mjml');
 var handlebars = require('handlebars');
 var fs = require('fs');
+var styleJSON = JSON.parse(fs.readFileSync('./JsonStyle/dhs-style.json'));
+
+console.log(styleJSON);
 
 gulp.task('default', defaultTask);
 
@@ -26,41 +29,47 @@ gulp.task('jsMjmlWatch', function() {
 });
 
 gulp.task('mjmlJsDataBind', function() {
-  console.log('begin mjmlJsDataBind...');
-  gulp.watch('./handlebarsjs/mjmlTemplates/*.mjml')
+  console.log('begin json styling mjmlJsDataBind...');
+  gulp.watch('./JsonStyle/*.mjml')
   .on('change', function(path) {
     console.log(path)
     var sourceTmpl = path;
     mjmlJSONDataBind(sourceTmpl)
-  })
-});
+  });
 
-gulp.watch('./handlebarsjs/mjmlTemplates/*.mjml')
-.on('change', function() {
-  gulp.src('./handlebarsjs/mjmlTemplates/*.mjml')
-  .pipe(mjml())
-  .pipe(gulp.dest('./handlebarsjs/mjmlTemplates/html-output'));
+  gulp.watch('./JsonStyle/*.hbs')
+  .on('change', function() {
+    gulp.src('./JsonStyle/*.hbs')
+    .pipe(mjml())
+    .pipe(gulp.dest('./JsonStyle/html-output'));
+  })
+  .on('add', function() {
+    gulp.src('./JsonStyle/*.hbs')
+    .pipe(mjml())
+    .pipe(gulp.dest('./JsonStyle/html-output'));
+  });
 });
 
 function mjmlJSONDataBind(srcTmplPath) {
   console.log('sampleDataBind...srcTmplPath:');
   console.log(srcTmplPath);
 
-  var styleJSON = {
+  /*var styleJSON = {
       "items": [
         {
           "name": "Handlebars.java rocks!"
         }
       ],
       "myblue": "blue"
-    };
+    };*/
 
   fs.readFile(srcTmplPath, 'utf-8', function(err, _data){
     console.log(_data);
     var mjmlTemplate = handlebars.compile(_data);
     var mjmlWithStyleBind = mjmlTemplate(styleJSON);
     console.log(mjmlWithStyleBind);
-    fs.writeFile(srcTmplPath, mjmlWithStyleBind, function(error) {})
+    console.log('old filename path:' + srcTmplPath + ', replaced with new filename path:' + srcTmplPath.replace('.mjml', '.hbs'));
+    fs.writeFile(srcTmplPath.replace('.mjml', '.hbs'), mjmlWithStyleBind, function(error) {})
   })
 }
 
