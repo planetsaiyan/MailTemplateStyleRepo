@@ -15,10 +15,10 @@ public class MjmlMail {
   public static void main(String args[]) {
     runDummyTest();
 
-
+//    handlebarCompile("welcome-mail");
   }
 
-  public static void handlebarCompile(String mjmlTemplateName, ) {
+  public static void handlebarCompile(String mjmlTemplateName) {
     TemplateLoader loader = new ClassPathTemplateLoader();
     loader.setSuffix(".mjml");
     Handlebars handlebars = new Handlebars(loader);
@@ -38,7 +38,8 @@ public class MjmlMail {
   }
 
   public static void outputTemplate(String template) {
-    Path path = Paths.get("mjml-output/mjml/mytest.mjml");
+    Path path = Paths.get("mjml-output/mjml/test-final-output.html");
+//    Path path = Paths.get("mjml-output/mjml/test.mjml");
     try {
       BufferedWriter writer = Files.newBufferedWriter(path);
       writer.write(template);
@@ -50,10 +51,11 @@ public class MjmlMail {
 
   public static void runDummyTest() {
     TemplateLoader loader = new ClassPathTemplateLoader();
-    loader.setSuffix(".mjml");
+//    loader.setSuffix(".mjml");
     Handlebars handlebars = new Handlebars(loader);
     try {
-      Template template = handlebars.compile("test");
+      Template template = handlebars.compile("welcome-mail");
+//      Template template = handlebars.compile("test");
 
       MyDummy myDummy = new MyDummy("blue");
       String mjmlData = template.apply(myDummy);
