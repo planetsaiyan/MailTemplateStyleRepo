@@ -3,10 +3,18 @@
     "navbar": {
       "bgColor": "#E0E2E3",
       "linkColor": "#000000"
-    }
+    },
+    "textColor": "#919699"
   },
   "footer": {},
+  "colors": {
+    "bgColorLightGray": "#E0E2E3",
+    "bgColorDarkGray": "#919699",
+    "textGreen": "#7B9D29"
+  },
   "welcomeMail": {
+    "background": "",
+    "textSecondaryColor": "",
     "sectionBgColor": "#E0E2E3",
     "containerBgColor": "#fff",
     "textWhite": "#fff",
