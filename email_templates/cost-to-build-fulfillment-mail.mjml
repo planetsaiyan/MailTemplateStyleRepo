@@ -17,8 +17,8 @@
         </mj-column>
         <mj-column width="70%">
           <mj-text>
-            <strong>Product Name -</strong> <span style="color:#919699">Plan#{{planNum}}</span><br/>
-            <strong>Order Number -</strong> <span style="color:#919699">{{orderNum}}</span><br/>
+            <strong>Product Name -</strong> <span style="color:#919699">Plan#planNum</span><br/>
+            <strong>Order Number -</strong> <span style="color:#919699">orderNum</span><br/>
           </mj-text>
         </mj-column>
         <mj-column width="15%">

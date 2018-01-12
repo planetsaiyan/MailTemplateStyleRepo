@@ -17,8 +17,8 @@
         </mj-column>
         <mj-column width="70%">
           <mj-text padding="0px">
-            <strong>Order -</strong> <span style="color:#919699">{{orderId}}</span><br/>
-            <strong>Email -</strong> <span>{{hhy@hanleywood.com}}</sapn><br/>
+            <strong>Order -</strong> <span style="color:#919699">orderId</span><br/>
+            <strong>Email -</strong> <span>hhy@hanleywood.com</sapn><br/>
           </mj-text>
           <mj-divider border-width="5px" padding-left="0px" padding-right="0px"/>
         </mj-column>

@@ -6,15 +6,15 @@
     <mj-column width="35%">
       <mj-text padding="0px">
         <strong>Product Name</strong><br/>
-        <strong><span style="color:#919699">Plan# {{planNum}}</strong><br/>
+        <strong><span style="color:#919699">Plan# planNum</strong><br/>
         <strong>Total</strong><br/>
       </mj-text>
     </mj-column>
     <mj-column width="35%">
       <mj-text padding="0px" align="right">
         <strong>Price</strong><br/>
-        {{$89.00}}<br/>
-        {{$100.00}}
+        $89.00<br/>
+        $100.00
       </mj-text>
     </mj-column>
     <mj-column width="15%">

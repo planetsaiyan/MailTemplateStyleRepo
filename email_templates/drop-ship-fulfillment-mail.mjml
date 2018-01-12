@@ -17,10 +17,10 @@
         </mj-column>
         <mj-column width="80%">
           <mj-text>
-            <strong>Order Number -</strong> <span style="color:#919699">#{{orderNum}}</span><br/>
-            <strong>Shipping Date -</strong> <span style="color:#919699">{{shippingDate}} - Order Date - {{orderDate}}</span><br/>
-            <strong>Shipping Via -</strong> <span style="color:#919699">{{shipVia}}</span><br/>
-            <strong>Tracking Number -</strong> <span style="color:#919699">{{trackingNum}}</span><br/>
+            <strong>Order Number -</strong> <span style="color:#919699">#orderNum</span><br/>
+            <strong>Shipping Date -</strong> <span style="color:#919699">shippingDate - Order Date - orderDate</span><br/>
+            <strong>Shipping Via -</strong> <span style="color:#919699">shipVia</span><br/>
+            <strong>Tracking Number -</strong> <span style="color:#919699">trackingNum</span><br/>
           </mj-text>
           <mj-divider border-width="5px" />
         </mj-column>

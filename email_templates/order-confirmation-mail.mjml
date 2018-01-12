@@ -14,7 +14,7 @@
             Hello<br/>
           </mj-text>
           <mj-text font-size="18px">
-            <strong>{{hhy@hanlyewood.com}}</strong>
+            <strong>hhy@hanlyewood.com</strong>
           </mj-text>
         </mj-column>
       </mj-section>
@@ -32,10 +32,10 @@
         </mj-column>
         <mj-column width="60%">
           <mj-text align="left">
-            <strong>Product Name -</strong> <span style="color:#919699">Plan # {{120-120}}</span><br/>
-            <strong>Order Number -</strong> <span style="color:#919699">#{{562536}}</span><br/>
-            <strong>Order Date -</strong> <span style="color:#919699">{{12/12/2018}}</span><br/>
-            <strong>Total Price -</strong> <span style="color:#919699">{{$1000}}</span>
+            <strong>Product Name -</strong> <span style="color:#919699">Plan # 120-120</span><br/>
+            <strong>Order Number -</strong> <span style="color:#919699">#562536</span><br/>
+            <strong>Order Date -</strong> <span style="color:#919699">12/12/2018</span><br/>
+            <strong>Total Price -</strong> <span style="color:#919699">$1000</span>
           </mj-text>
         </mj-column>
         <mj-column width="20%">
