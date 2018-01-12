@@ -37,6 +37,10 @@ gulp.task('mjmlJsDataBind', function() {
     mjmlJSONDataBind(sourceTmpl)
   });
 
+  gulp.watch('./JsonStyle/*.json')
+    .on('change', reimportJsonStyle)
+    .on('add', reimportJsonStyle);
+
   gulp.watch('./JsonStyle/*.hbs')
   .on('change', function() {
     gulp.src('./JsonStyle/*.hbs')
@@ -49,6 +53,11 @@ gulp.task('mjmlJsDataBind', function() {
     .pipe(gulp.dest('./JsonStyle/html-output'));
   });
 });
+
+function reimportJsonStyle() {
+  console.log('reimport Json Style');
+  styleJSON = JSON.parse(fs.readFileSync('./JsonStyle/dhs-style.json'));
+}
 
 function mjmlJSONDataBind(srcTmplPath) {
   console.log('sampleDataBind...srcTmplPath:');

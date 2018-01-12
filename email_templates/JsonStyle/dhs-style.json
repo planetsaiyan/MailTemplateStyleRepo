@@ -1,8 +1,10 @@
 {
-  "items": [
-    {
-      "name": "Handlebars.java rocks!"
-    }
-  ],
-  "myblue": "blue"
+  "welcomeMail": {
+    "sectionBgColor": "#E0E2E3",
+    "containerBgColor": "#fff",
+    "textWhite": "#fff",
+    "textFontSize": "14px",
+    "primaryColor": "#7B9D29"
+  },
+  "orderConfirmationMail": {}
 }
