@@ -1,0 +1,23 @@
+<mjml>
+  <mj-body>
+    <mj-container background-color="#fff">
+      <mj-include path="./common/navbar" />
+      <mj-include path="./common/logo-header" />
+      <mj-section>
+        <mj-column>
+          <mj-text align="center" font-size="20px">
+            Click below to access your account
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column>
+          <mj-button background-color="#7B9D29" color="white">
+            Access my account
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-include path="./common/footer" />
+    </mj-container>
+  </mj-body>
+</mjml>

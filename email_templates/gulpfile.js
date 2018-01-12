@@ -28,36 +28,52 @@ gulp.task('jsMjmlWatch', function() {
     })
 });
 
-gulp.task('welcome', function() {
-  gulp.watch('./JsonStyle/welcome-mail.mjml')
+gulp.task('runMjml', function() {
+  gulp.watch('./JsonStyle/*.mjml')
     .on('change', function() {
-      gulp.src('./JsonStyle/welcome-mail.mjml')
+      gulp.src('./JsonStyle/*.mjml')
         .pipe(mjml())
         .pipe(gulp.dest('./JsonStyle/html-output'))
     });
   gulp.watch('./JsonStyle/html-output/*.html')
     .on('change', function(path) {
       reimportJsonStyle();
-      styleHTML(path, 'welcome-mail');
+      var filename = path.split('/').pop();
+      if(filename.indexOf('.json') < 0){
+        styleHTML(path, filename.replace('.html', ''));
+      }
+
     })
     .on('add', function(path) {
       reimportJsonStyle();
-      styleHTML(path, 'welcome-mail');
+      var filename = path.split('/').pop();
+      if(filename.indexOf('.json') < 0){
+        styleHTML(path, filename.replace('.html', ''));
+      }
+
     });
 
   gulp.watch('./JsonStyle/*.json')
-  .on('change', function(path) {
-    gulp.src('./JsonStyle/welcome-mail.mjml')
-    .pipe(mjml())
-    .pipe(gulp.dest('./JsonStyle/html-output'))
-    styleHTML(path, 'welcome-mail');
-  })
-  .on('add', function(path) {
-    gulp.src('./JsonStyle/welcome-mail.mjml')
-    .pipe(mjml())
-    .pipe(gulp.dest('./JsonStyle/html-output'))
-    styleHTML(path, 'welcome-mail');
-  });
+    .on('change', function(path) {
+      gulp.src('./JsonStyle/*.mjml')
+        .pipe(mjml())
+        .pipe(gulp.dest('./JsonStyle/html-output'))
+      var filename = path.split('/').pop();
+      if(filename.indexOf('.json') < 0){
+        styleHTML(path, filename.replace('.html', ''));
+      }
+
+    })
+    .on('add', function(path) {
+      gulp.src('./JsonStyle/*.mjml')
+        .pipe(mjml())
+        .pipe(gulp.dest('./JsonStyle/html-output'))
+      var filename = path.split('/').pop();
+      if(filename.indexOf('.json') < 0){
+        styleHTML(path, filename.replace('.html', ''));
+      }
+
+    });
 })
 
 function styleHTML(filesrc, filename) {
