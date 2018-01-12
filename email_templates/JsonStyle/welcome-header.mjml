@@ -5,6 +5,6 @@
       </mj-text>
     </mj-column>
     <mj-column width="70%">
-      <mj-image src="img/dhs_logo.png" padding-top="5px" padding-left="0px" padding-right="0px"/>
+      <mj-image src="{{header.logo}}" padding-top="5px" padding-left="0px" padding-right="0px"/>
     </mj-column>
 </mj-section>

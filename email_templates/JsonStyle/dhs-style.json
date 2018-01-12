@@ -4,23 +4,27 @@
       "bgColor": "#E0E2E3",
       "linkColor": "#000000"
     },
-    "textColor": "#919699"
+    "textColor": "#919699",
+    "logo": "img/dhs_logo.png"
   },
   "footer": {},
   "colors": {
-    "bgColorLightGray": "#E0E2E3",
-    "bgColorDarkGray": "#919699",
-    "textGreen": "#7B9D29"
+    "containerBackground": "#fff",
+    "lightBackground": "#E0E2E3",
+    "darkBackground": "#919699",
+    "colorText": "#7B9D29",
+    "footerLinks": "#C36D1B"
   },
+  "authTokenMail": {},
+  "costToBuildFulFillmentMail": {},
+  "dropShipFulfillmentMail": {},
+  "emailFulfillmentMail": {},
+  "orderConfirmationMail": {},
+  "orderDetailsPartial": {},
+  "orderPriceInfoPartial": {},
   "welcomeMail": {
-    "background": "",
-    "textSecondaryColor": "",
-    "sectionBgColor": "#E0E2E3",
-    "containerBgColor": "#fff",
-    "textWhite": "#fff",
-    "textFontSize": "14px",
-    "primaryColor": "#7B9D29"
+    "imageTextColor": "#fff"
   },
-  "orderConfirmationMail": {}
+  "welcomeHeader": {}
 }
 

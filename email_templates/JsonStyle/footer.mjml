@@ -1,11 +1,11 @@
-<mj-section padding-bottom="0px" background-color="rgb(224,226,227)">
+<mj-section padding-bottom="0px" background-color="{{colors.lightBackground}}">
   <mj-column>
     <mj-text padding="0px" align="center">
-      If you have questions, please contact: <span style="color:rgb(195,109,27);font-weight:500;">sales@dreamhomesource</span><br/>
+      If you have questions, please contact: <span style="color:{{colors.footerLinks}};font-weight:500;">sales@dreamhomesource</span><br/>
     </mj-text>
   </mj-column>
 </mj-section>
-<mj-section padding="0px" background-color="rgb(224,226,227)">
+<mj-section padding="0px" background-color="{{colors.lightBackground}}">
   <mj-column width="10%">
 
   </mj-column>
@@ -23,7 +23,7 @@
 
   </mj-column>
 </mj-section>
-<<mj-section padding-top="0px" background-color="rgb(224,226,227)">
+<<mj-section padding-top="0px" background-color="{{colors.lightBackground}}">
   <mj-column>
     <mj-text padding="0px" align="center">
       Copyright 2017, Hanley Wood LLC. All rights reserved

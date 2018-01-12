@@ -2,11 +2,10 @@
   <mj-head>
     <mj-attributes>
       <mj-text align="center"/>
-      <mj-class name="sm-white-text" font-size="14px" color="#fff"/>
     </mj-attributes>
   </mj-head>
   <mj-body>
-    <mj-container background-color="{{welcomeMail.containerBgColor}}">
+    <mj-container background-color="{{colors.containerBackground}}">
       <mj-include path="./navbar" />
       <mj-include path="./welcome-header" />
       <mj-section padding-top="0px" padding-bottom="0px">
@@ -16,9 +15,9 @@
           </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section background-color="{{welcomeMail.sectionBgColor}}" padding-top="5px" padding-bottom="5px">
+      <mj-section background-color="{{colors.lightBackground}}" padding-top="5px" padding-bottom="5px">
         <mj-column>
-          <mj-text font-size="{{welcomeMail.textFontSize}}">
+          <mj-text font-size="14px">
             <strong>Search</strong> our inventory of over 30,000 home plans<br/>
             <strong>Browse</strong> our cureated collections and designers<br/>
             <strong>Customize</strong> any plan to make it your dream home
@@ -27,12 +26,12 @@
       </mj-section>
       <mj-section padding="0" padding-top="2">
         <mj-column>
-          <mj-divider width="100%" padding="0px" border-width="8px" border-color="#919699"/>
+          <mj-divider width="100%" padding="0px" border-width="8px" border-color="{{colors.darkBackground}}"/>
         </mj-column>
       </mj-section>
       <mj-section padding="0">
         <mj-column>
-          <mj-text color="{{welcomeMail.primaryColor}}" font-size="14px">
+          <mj-text color="{{colors.colorText}}" font-size="14px">
             Browse a few of our favorite collections:
           </mj-text>
         </mj-column>
@@ -41,21 +40,21 @@
       <mj-section padding-top="0">
         <mj-column>
           <mj-image src="img/w800x533.jpg" border="none" padding-left="5" padding-right="5" padding-top="5" padding-bottom="0"/>
-          <mj-text color="{{welcomeMail.textWhite}}" padding-left="5" padding-right="5" padding-bottom="0" padding-top="0">
-            <p style="background-color:rgb(145,150,153);padding:0;margin:0 auto;width:190px;">Exclusive Plans</p>
+          <mj-text color="{{welcomeMail.imageTextColor}}" padding-left="5" padding-right="5" padding-bottom="0" padding-top="0">
+            <p style="background-color:{{colors.darkBackground}};padding:0;margin:0 auto;width:190px;">Exclusive Plans</p>
           </mj-text>
         </mj-column>
         <mj-column>
           <mj-image src="img/w800x533.jpg" border="none" padding-left="5" padding-right="5" padding-top="5" padding-bottom="0">
           </mj-image>
-          <mj-text color="{{welcomeMail.textWhite}}" padding-left="5" padding-right="5" padding-bottom="0" padding-top="0">
-            <p style="background-color:rgb(145,150,153);padding:0;margin:0 auto;width:190px;">Southern Plans</p>
+          <mj-text color="{{welcomeMail.imageTextColor}}" padding-left="5" padding-right="5" padding-bottom="0" padding-top="0">
+            <p style="background-color:{{colors.darkBackground}};padding:0;margin:0 auto;width:190px;">Southern Plans</p>
           </mj-text>
         </mj-column>
         <mj-column>
           <mj-image src="img/w800x533.jpg" padding-left="5" padding-right="5" padding-top="5" padding-bottom="0"/>
-          <mj-text color="{{welcomeMail.textWhite}}" padding-left="5" padding-right="5" padding-bottom="0" padding-top="0">
-            <p style="background-color:rgb(145,150,153);padding:0;margin:0 auto;width:190px;">Award Winning Plans</p>
+          <mj-text color="{{welcomeMail.imageTextColor}}" padding-left="5" padding-right="5" padding-bottom="0" padding-top="0">
+            <p style="background-color:{{colors.darkBackground}};padding:0;margin:0 auto;width:190px;">Award Winning Plans</p>
           </mj-text>
         </mj-column>
       </mj-section>
