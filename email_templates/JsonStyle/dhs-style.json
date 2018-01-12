@@ -1,4 +1,10 @@
 {
+  "header": {
+    "navbar": {
+      "bgColor": "#E0E2E3"
+    }
+  },
+  "footer": {},
   "welcomeMail": {
     "sectionBgColor": "#E0E2E3",
     "containerBgColor": "#fff",
@@ -8,3 +14,4 @@
   },
   "orderConfirmationMail": {}
 }
+

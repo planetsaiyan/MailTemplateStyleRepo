@@ -1,4 +1,4 @@
-<mj-navbar background-color="rgb(224,226,227)" padding="0">
+<mj-navbar background-color="{{header.navbar.bgColor}}" padding="0">
   <mj-column>
     <mj-inline-links base-url="https://mjml.io" ico-color="#fa8739">
       <mj-link padding-top="6px" padding-bottom="6px" href="https://mjml.io" color="#000000">HOME</mj-link>

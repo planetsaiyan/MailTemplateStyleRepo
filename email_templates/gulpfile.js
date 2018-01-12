@@ -28,30 +28,74 @@ gulp.task('jsMjmlWatch', function() {
     })
 });
 
+gulp.task('welcome', function() {
+  gulp.watch('./JsonStyle/welcome-mail.mjml')
+    .on('change', function() {
+      gulp.src('./JsonStyle/welcome-mail.mjml')
+        .pipe(mjml())
+        .pipe(gulp.dest('./JsonStyle/html-output'))
+    });
+  gulp.watch('./JsonStyle/html-output/*.html')
+    .on('change', function(path) {
+      reimportJsonStyle();
+      styleHTML(path, 'welcome-mail');
+    })
+    .on('add', function(path) {
+      reimportJsonStyle();
+      styleHTML(path, 'welcome-mail');
+    });
+
+  gulp.watch('./JsonStyle/*.json')
+  .on('change', function(path) {
+    gulp.src('./JsonStyle/welcome-mail.mjml')
+    .pipe(mjml())
+    .pipe(gulp.dest('./JsonStyle/html-output'))
+    styleHTML(path, 'welcome-mail');
+  })
+  .on('add', function(path) {
+    gulp.src('./JsonStyle/welcome-mail.mjml')
+    .pipe(mjml())
+    .pipe(gulp.dest('./JsonStyle/html-output'))
+    styleHTML(path, 'welcome-mail');
+  });
+})
+
+function styleHTML(filesrc, filename) {
+  filesrc.replace('.html', '.hbs');
+  fs.readFile(filesrc, 'utf-8', function(err, fileContent){
+    var htmlTemplate = handlebars.compile(fileContent);
+    var styledHtml = htmlTemplate(styleJSON);
+    fs.writeFile('./JsonStyle/html-output/styledHtml/'+filename+'.html', styledHtml, function(error) {})
+  })
+}
+
+
 gulp.task('mjmlJsDataBind', function() {
   console.log('begin json styling mjmlJsDataBind...');
-  gulp.watch('./JsonStyle/*.mjml')
-  .on('change', function(path) {
-    console.log(path)
-    var sourceTmpl = path;
-    mjmlJSONDataBind(sourceTmpl)
-  });
+  gulp.watch('./JsonStyle/welcome-mail.mjml')
+    .on('change', function(path) {
+      console.log(path);
+      var sourceTmpl = path;
+      mjmlJSONDataBind(sourceTmpl)
+    });
 
   gulp.watch('./JsonStyle/*.json')
     .on('change', reimportJsonStyle)
     .on('add', reimportJsonStyle);
 
-  gulp.watch('./JsonStyle/*.hbs')
-  .on('change', function() {
-    gulp.src('./JsonStyle/*.hbs')
-    .pipe(mjml())
-    .pipe(gulp.dest('./JsonStyle/html-output'));
-  })
-  .on('add', function() {
-    gulp.src('./JsonStyle/*.hbs')
-    .pipe(mjml())
-    .pipe(gulp.dest('./JsonStyle/html-output'));
-  });
+  // gulp.watch('./JsonStyle/*.hbs')
+  // .on('change', function() {
+  //   gulp.src('./JsonStyle/*.hbs')
+  //   .pipe(mjml())
+  //   .pipe(gulp.dest('./JsonStyle/html-output'));
+  //   console.log('hbs template changed, output new html template...');
+  // })
+  // .on('add', function() {
+  //   gulp.src('./JsonStyle/*.hbs')
+  //   .pipe(mjml())
+  //   .pipe(gulp.dest('./JsonStyle/html-output'));
+  //   console.log('hbs template changed, output new html template...');
+  // });
 });
 
 function reimportJsonStyle() {
@@ -63,20 +107,11 @@ function mjmlJSONDataBind(srcTmplPath) {
   console.log('sampleDataBind...srcTmplPath:');
   console.log(srcTmplPath);
 
-  /*var styleJSON = {
-      "items": [
-        {
-          "name": "Handlebars.java rocks!"
-        }
-      ],
-      "myblue": "blue"
-    };*/
-
   fs.readFile(srcTmplPath, 'utf-8', function(err, _data){
-    console.log(_data);
+    // console.log(_data);
     var mjmlTemplate = handlebars.compile(_data);
     var mjmlWithStyleBind = mjmlTemplate(styleJSON);
-    console.log(mjmlWithStyleBind);
+    // console.log(mjmlWithStyleBind);
     console.log('old filename path:' + srcTmplPath + ', replaced with new filename path:' + srcTmplPath.replace('.mjml', '.hbs'));
     fs.writeFile(srcTmplPath.replace('.mjml', '.hbs'), mjmlWithStyleBind, function(error) {})
   })
