@@ -9,11 +9,12 @@
   },
   "footer": {},
   "colors": {
-    "containerBackground": "#fff",
     "lightBackground": "#E0E2E3",
     "darkBackground": "#919699",
     "colorText": "#7B9D29",
-    "footerLinks": "#C36D1B"
+    "footerLinks": "#C36D1B",
+    "containerBackground": "#fff",
+    "button": "#7B9D29"
   },
   "authTokenMail": {},
   "costToBuildFulFillmentMail": {},

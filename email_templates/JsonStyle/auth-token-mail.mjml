@@ -1,6 +1,6 @@
 <mjml>
   <mj-body>
-    <mj-container background-color="#fff">
+    <mj-container background-color="{{colors.containerBackground}}">
       <mj-include path="./common/navbar" />
       <mj-include path="./common/logo-header" />
       <mj-section>
@@ -12,7 +12,7 @@
       </mj-section>
       <mj-section>
         <mj-column>
-          <mj-button background-color="#7B9D29" color="white">
+          <mj-button background-color="{{colors.button}}" color="#fff">
             Access my account
           </mj-button>
         </mj-column>
