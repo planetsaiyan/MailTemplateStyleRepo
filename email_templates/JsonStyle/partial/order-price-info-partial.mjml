@@ -1,0 +1,112 @@
+<mj-section padding="0px">
+  <mj-column width="" background-color="">
+    <mj-image src="./img/w300x200.jpeg" padding="0px"/>
+  </mj-column>
+</mj-section>
+<mj-section padding-top="0px">
+  <mj-group>
+    <mj-column width="15%">
+
+    </mj-column>
+    <mj-column width="35%" background-color="">
+      <mj-text padding-left="0px">
+        <strong>Plan #planNum</strong><br/>
+        <strong>Plan Set: 5 Copy Set</strong><br/>
+        <strong>Foundation: Crawlspace</strong><br/>
+      </mj-text>
+    </mj-column>
+    <mj-column width="35%" background-color="">
+      <mj-text padding-right="0px" align="right">
+        $89.00 <br/>
+      </mj-text>
+    </mj-column>
+    <mj-column width="15%">
+
+    </mj-column>
+  </mj-group>
+</mj-section>
+<mj-section>
+  <mj-column width="10%">
+
+  </mj-column>
+  <mj-column width="80%">
+    <mj-divider border-width="5px" />
+  </mj-column>
+  <mj-column width="10%">
+
+  </mj-column>
+</mj-section>
+<mj-section padding-top="0px">
+  <mj-group>
+    <mj-column width="15%">
+
+    </mj-column>
+    <mj-column width="35%">
+      <mj-text padding="0px">
+        <strong>Shipping Via Ground</strong><br/>
+        <strong>Tax</strong><br/>
+        <strong>Total</strong><br/>
+      </mj-text>
+    </mj-column>
+    <mj-column width="35%">
+      <mj-text padding="0px" align="right">
+        <strong>$0.00</strong><br/>
+        $125.00<br/>
+        $3000.00
+      </mj-text>
+    </mj-column>
+    <mj-column width="15%">
+
+    </mj-column>
+  </mj-group>
+</mj-section>
+<mj-section>
+  <mj-column width="10%">
+
+  </mj-column>
+  <mj-column width="80%">
+    <mj-divider border-width="5px" />
+  </mj-column>
+  <mj-column width="10%">
+
+  </mj-column>
+</mj-section>
+<mj-section padding-top="0px">
+  <mj-group>
+    <mj-column width="15%">
+
+    </mj-column>
+    <mj-column width="35%">
+      <mj-text padding="0px">
+        <strong style="color:#7B9D29">Shipping To:</strong><br/>
+        <strong>Monika Chand</strong><br/>
+        <strong>845 Market Street,</strong><br/>
+        <strong>San Francisco, CA</strong><br/>
+        <strong>94107</strong><br/>
+      </mj-text>
+    </mj-column>
+    <mj-column width="35%">
+      <mj-text padding="0px" align="right">
+        <strong style="color:#7B9D29">Billing to:</strong><br/>
+        <strong>Monika Chand</strong><br/>
+        <strong>845 Market Street,</strong><br/>
+        <strong>San Francisco, CA</strong><br/>
+        <strong>94107</strong><br/>
+      </mj-text>
+    </mj-column>
+    <mj-column width="15%">
+
+    </mj-column>
+  </mj-group>
+</mj-section>
+<mj-section>
+  <mj-column width="10%">
+
+  </mj-column>
+  <mj-column width="80%">
+    <mj-divider border-width="5px" />
+  </mj-column>
+  <mj-column width="10%">
+
+  </mj-column>
+</mj-section>
