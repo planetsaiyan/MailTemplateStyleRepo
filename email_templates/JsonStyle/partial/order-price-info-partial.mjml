@@ -1,21 +1,33 @@
-<mj-section padding="0px">
+<!-- <mj-section padding="0px">
+  <mj-column width="" background-color="">
+    <mj-text>
+      {{#each orders}}
+    </mj-text>
+    <mj-image src="./img/w300x200.jpeg" padding="0px"/>
+    <mj-text>
+      {{/each}}
+    </mj-text>
+  </mj-column>
+</mj-section> -->
+<mj-section padding-top="0px">
+  <mj-text padding="0px">
+  {{#each orders}}
+  </mj-text>
   <mj-column width="" background-color="">
     <mj-image src="./img/w300x200.jpeg" padding="0px"/>
   </mj-column>
-</mj-section>
-<mj-section padding-top="0px">
-  <mj-group>
+  <!-- <mj-group> -->
     <mj-column width="15%">
 
     </mj-column>
     <mj-column width="35%" background-color="">
       <mj-text padding-left="0px">
-        <strong>Plan #planNum</strong><br/>
+        <strong>{{orderName}} Plan #planNum</strong><br/>
         <strong>Plan Set: 5 Copy Set</strong><br/>
         <strong>Foundation: Crawlspace</strong><br/>
       </mj-text>
     </mj-column>
-    <mj-column width="35%" background-color="">
+    <mj-column width="35%" background-color="{{mybgColor}}">
       <mj-text padding-right="0px" align="right">
         $89.00 <br/>
       </mj-text>
@@ -23,7 +35,10 @@
     <mj-column width="15%">
 
     </mj-column>
-  </mj-group>
+  <!-- </mj-group> -->
+  <mj-text padding="0px">
+      {{/each}}
+  </mj-text>
 </mj-section>
 <mj-section>
   <mj-column width="10%">

@@ -26,6 +26,15 @@
   "welcomeMail": {
     "imageTextColor": "#fff"
   },
-  "welcomeHeader": {}
+  "welcomeHeader": {},
+  "orders": [
+    {
+      "orderName": "foo"
+    },
+    {
+      "orderName": "bar"
+    }
+  ],
+  "mybgColor": "hotpink"
 }
 
