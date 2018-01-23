@@ -27,14 +27,85 @@
     "imageTextColor": "#fff"
   },
   "welcomeHeader": {},
-  "orders": [
+  "cartItemView": [
     {
-      "orderName": "foo"
+      "image": {
+        "w300x200": "https://houseplans-stag.s3.amazonaws.com/product/3m1jnv157mmi3q0tt1iv857t2p/w300x200.JPG?v=2"
+      },
+      "name": "120-249",
+      "options": [
+        {
+          "name": "Plan Set",
+          "description": "5 Copy Set"
+        },
+        {
+          "name": "Foundation",
+          "description": "Slab"
+        },
+        {
+          "name": "Framing",
+          "description": "Wood 2x4"
+        }
+      ],
+      "priceTotal": "995.00"
     },
     {
-      "orderName": "bar"
+      "image": {
+        "w300x200": "https://houseplans-stag.s3.amazonaws.com/product/init9jb5k3igifg2fn13hqi06g/w300x200.jpg?v=4"
+      },
+      "name": "430-164",
+      "options": [
+        {
+          "name": "Plan Set",
+          "description": "PDF Set"
+        },
+        {
+          "name": "Foundation",
+          "description": "Crawlspace"
+        }
+      ],
+      "priceTotal": "945.00"
     }
   ],
-  "mybgColor": "hotpink"
+  "orderView": {
+    "taxTotal": "125.00",
+    "shippingPrice": "40.00",
+    "total": "1940.00"
+  },
+  "dropShipFulfillment": {
+    "shippingProvider": "FedEx",
+    "trackingNumber": "563891-12345",
+    "vendorOrderItem": {
+      "vendorOrder": {
+        "order": {
+          "id": "563891"
+        }
+      }
+    }
+  },
+  "order": {
+    "shippingFirstName": "Monika",
+    "shippingLastName": "Chand",
+    "shippingCompany": "",
+    "shippingAddress1": "845 Market Street",
+    "shippingAddress2": "",
+    "shippingCity": "San Francisco",
+    "shippingState": "CA",
+    "shippingPostalCode": "94107",
+    "shippingCountry": "USA",
+    "shippingPhone": "415-123-5678"
+  },
+  "paymentMethod": {
+    "shippingFirstName": "",
+    "shippingLastName": "",
+    "shippingCompany": "",
+    "shippingAddress1": "",
+    "shippingAddress2": "",
+    "shippingCity": "",
+    "shippingState": "",
+    "shippingPostalCode": "",
+    "shippingCountry": "",
+    "shippingPhone": ""
+  }
 }
 

@@ -156,10 +156,10 @@
           <td style="vertical-align:top;width:60px;">
       <![endif]--><div class="mj-column-per-10 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody></tbody></table></div><!--[if mso | IE]>
       </td><td style="vertical-align:top;width:480px;">
-      <![endif]--><div class="mj-column-per-80 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:10px 25px;" align="left"><div style="cursor:auto;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;text-align:left;"><strong>Order Number -</strong> <span style="color:#919699">#orderNum</span><br>
-            <strong>Shipping Date -</strong> <span style="color:#919699">shippingDate - Order Date - orderDate</span><br>
-            <strong>Shipping Via -</strong> <span style="color:#919699">shipVia</span><br>
-            <strong>Tracking Number -</strong> <span style="color:#919699">trackingNum</span><br></div></td></tr><tr><td style="word-wrap:break-word;font-size:0px;padding:10px 25px;"><p style="font-size:1px;margin:0px auto;border-top:5px solid #000000;width:100%;"></p><!--[if mso | IE]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="font-size:1px;margin:0px auto;border-top:5px solid #000000;width:100%;" width="480"><tr><td style="height:0;line-height:0;"> </td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+      <![endif]--><div class="mj-column-per-80 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:10px 25px;" align="left"><div style="cursor:auto;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;text-align:left;"><strong>Order Number - #{{dropShipFulfillment.vendorOrderItem.vendorOrder.order.id}}</strong><br>
+            <strong>Shipping Date - shippingDate -   Order Date - orderDate</strong><br>
+            <strong>Shipping Via - {{dropShipFulfillment.shippingProvider}}</strong><br>
+            <strong>Tracking Number - #{{dropShipFulfillment.trackingNumber}}</strong><br></div></td></tr><tr><td style="word-wrap:break-word;font-size:0px;padding:10px 25px;"><p style="font-size:1px;margin:0px auto;border-top:5px solid #000000;width:100%;"></p><!--[if mso | IE]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="font-size:1px;margin:0px auto;border-top:5px solid #000000;width:100%;" width="480"><tr><td style="height:0;line-height:0;"> </td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
       </td><td style="vertical-align:top;width:60px;">
       <![endif]--><div class="mj-column-per-10 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody></tbody></table></div><!--[if mso | IE]>
       </td></tr></table>
@@ -174,7 +174,7 @@
       <table role="presentation" border="0" cellpadding="0" cellspacing="0">
         <tr>
           <td style="vertical-align:undefined;width:600px;">
-      <![endif]--><div style="cursor:auto;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;text-align:left;">{{#each orders}}</div><!--[if mso | IE]>
+      <![endif]--><div style="cursor:auto;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;text-align:left;">{{#each cartItemView}}</div><!--[if mso | IE]>
       </td></tr></table>
       <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
       </td></tr></table>
@@ -183,19 +183,20 @@
       <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-      <![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 0px;padding-top:0px;"><!--[if mso | IE]>
+      <![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 0px;padding-bottom:0px;padding-top:0px;"><!--[if mso | IE]>
       <table role="presentation" border="0" cellpadding="0" cellspacing="0">
         <tr>
           <td style="vertical-align:top;width:NaNpx;">
-      <![endif]--><div class="mj-column-px-NaN outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" style="background:;" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:0px;" align="center"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="center" border="0"><tbody><tr><td style="width:NaN;"><img alt="" height="auto" src="./img/w300x200.jpeg" style="border:none;border-radius:0px;display:block;font-size:13px;outline:none;text-decoration:none;width:100%;height:auto;" width="NaN"></td></tr></tbody></table></td></tr></tbody></table></div><!--[if mso | IE]>
+      <![endif]--><div class="mj-column-px-NaN outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" style="background:;" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:0px;" align="center"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="center" border="0"><tbody><tr><td style="width:NaN;"><img alt="" height="auto" src="{{image.w300x200}}" style="border:none;border-radius:0px;display:block;font-size:13px;outline:none;text-decoration:none;width:100%;height:auto;" width="NaN"></td></tr></tbody></table></td></tr></tbody></table></div><!--[if mso | IE]>
       </td><td style="vertical-align:top;width:90px;">
       <![endif]--><div class="mj-column-per-15 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody></tbody></table></div><!--[if mso | IE]>
       </td><td style="vertical-align:top;width:210px;">
-      <![endif]--><div class="mj-column-per-35 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" style="background:;" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:10px 25px;padding-left:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;text-align:left;"><strong>{{orderName}} Plan #planNum</strong><br>
-      <strong>Plan Set: 5 Copy Set</strong><br>
-      <strong>Foundation: Crawlspace</strong><br></div></td></tr></tbody></table></div><!--[if mso | IE]>
+      <![endif]--><div class="mj-column-per-35 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" style="background:;" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:10px 25px;" align="left"><div style="cursor:auto;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;text-align:left;"><strong>{{orderName}} Plan #{{name}}</strong><br>
+      {{#each options}}
+        <strong><b>{{name}}:</b>  {{description}}</strong><br>
+      {{/each}}</div></td></tr></tbody></table></div><!--[if mso | IE]>
       </td><td style="vertical-align:top;width:210px;">
-      <![endif]--><div class="mj-column-per-35 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" style="background:{{mybgColor}};" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:10px 25px;padding-right:0px;" align="right"><div style="cursor:auto;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;text-align:right;">$89.00 <br></div></td></tr></tbody></table></div><!--[if mso | IE]>
+      <![endif]--><div class="mj-column-per-35 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:10px 25px;padding-right:0px;" align="right"><div style="cursor:auto;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;text-align:right;">${{priceTotal}} <br></div></td></tr></tbody></table></div><!--[if mso | IE]>
       </td><td style="vertical-align:top;width:90px;">
       <![endif]--><div class="mj-column-per-15 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody></tbody></table></div><!--[if mso | IE]>
       </td></tr></table>
@@ -219,7 +220,7 @@
       <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-      <![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 0px;"><!--[if mso | IE]>
+      <![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 0px;padding-top:0px;"><!--[if mso | IE]>
       <table role="presentation" border="0" cellpadding="0" cellspacing="0">
         <tr>
           <td style="vertical-align:top;width:60px;">
@@ -236,7 +237,7 @@
       <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-      <![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 0px;padding-top:0px;"><!--[if mso | IE]>
+      <![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 0px;padding-bottom:0px;padding-top:0px;"><!--[if mso | IE]>
       <table role="presentation" border="0" cellpadding="0" cellspacing="0">
         <tr>
           <td style="vertical-align:top;width:600px;">
@@ -252,9 +253,9 @@
         <strong>Total</strong><br></div></td></tr></tbody></table></div><!--[if mso | IE]>
             </td>
             <td style="vertical-align:top;width:210px;">
-      <![endif]--><div class="mj-column-per-35 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:35%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:0px;" align="right"><div style="cursor:auto;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;text-align:right;"><strong>$0.00</strong><br>
-        $125.00<br>
-        $3000.00</div></td></tr></tbody></table></div><!--[if mso | IE]>
+      <![endif]--><div class="mj-column-per-35 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:35%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:0px;" align="right"><div style="cursor:auto;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;text-align:right;"><strong>${{orderView.shippingPrice}}</strong><br>
+        <strong>${{orderView.taxTotal}}</strong><br>
+        <strong>${{orderView.total}}</strong></div></td></tr></tbody></table></div><!--[if mso | IE]>
             </td>
             <td style="vertical-align:top;width:90px;">
       <![endif]--><div class="mj-column-per-15 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:15%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody></tbody></table></div><!--[if mso | IE]>
@@ -299,7 +300,7 @@
             </td>
             <td style="vertical-align:top;width:210px;">
       <![endif]--><div class="mj-column-per-35 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:35%;"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="word-wrap:break-word;font-size:0px;padding:0px;" align="left"><div style="cursor:auto;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;text-align:left;"><strong style="color:#7B9D29">Shipping To:</strong><br>
-        <strong>Monika Chand</strong><br>
+        <strong>{{order.shippingFirstName}} {{order.shippingLastName}}</strong><br>
         <strong>845 Market Street,</strong><br>
         <strong>San Francisco, CA</strong><br>
         <strong>94107</strong><br></div></td></tr></tbody></table></div><!--[if mso | IE]>
@@ -325,7 +326,7 @@
       <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="width:600px;">
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-      <![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 0px;"><!--[if mso | IE]>
+      <![endif]--><div style="margin:0px auto;max-width:600px;"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0"><tbody><tr><td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 0px;padding-bottom:0px;padding-top:0px;"><!--[if mso | IE]>
       <table role="presentation" border="0" cellpadding="0" cellspacing="0">
         <tr>
           <td style="vertical-align:top;width:60px;">

@@ -1,25 +1,26 @@
 <mj-section padding="0px">
   <mj-text padding="0px">
-  {{#each orders}}
+  {{#each cartItemView}}
   </mj-text>
 </mj-section>
-<mj-section padding-top="0px">
+<mj-section padding-top="0px" padding-bottom="0px">
   <mj-column width="" background-color="">
-    <mj-image src="./img/w300x200.jpeg" padding="0px"/>
+    <mj-image src="{{image.w300x200}}" padding="0px"/>
   </mj-column>
   <mj-column width="15%">
 
   </mj-column>
   <mj-column width="35%" background-color="">
-    <mj-text padding-left="0px">
-      <strong>{{orderName}} Plan #planNum</strong><br/>
-      <strong>Plan Set: 5 Copy Set</strong><br/>
-      <strong>Foundation: Crawlspace</strong><br/>
+    <mj-text>
+      <strong>{{orderName}} Plan &#35;{{name}}</strong><br/>
+      {{#each options}}
+        <strong><b>{{name}}:</b>&nbsp;&nbsp;{{description}}</strong><br/>
+      {{/each}}
     </mj-text>
   </mj-column>
-  <mj-column width="35%" background-color="{{mybgColor}}">
+  <mj-column width="35%">
     <mj-text padding-right="0px" align="right">
-      $89.00 <br/>
+      ${{priceTotal}} <br/>
     </mj-text>
   </mj-column>
   <mj-column width="15%">
@@ -31,7 +32,7 @@
     {{/each}}
   </mj-text>
 </mj-section>
-<mj-section>
+<mj-section padding-top="0px">
   <mj-column width="10%">
 
   </mj-column>
@@ -42,7 +43,7 @@
 
   </mj-column>
 </mj-section>
-<mj-section padding-top="0px">
+<mj-section padding-top="0px" padding-bottom="0px">
   <mj-group>
     <mj-column width="15%">
 
@@ -56,9 +57,9 @@
     </mj-column>
     <mj-column width="35%">
       <mj-text padding="0px" align="right">
-        <strong>$0.00</strong><br/>
-        $125.00<br/>
-        $3000.00
+        <strong>${{orderView.shippingPrice}}</strong><br/>
+        <strong>${{orderView.taxTotal}}</strong><br/>
+        <strong>${{orderView.total}}</strong>
       </mj-text>
     </mj-column>
     <mj-column width="15%">
@@ -85,7 +86,7 @@
     <mj-column width="35%">
       <mj-text padding="0px">
         <strong style="color:#7B9D29">Shipping To:</strong><br/>
-        <strong>Monika Chand</strong><br/>
+        <strong>{{order.shippingFirstName}} {{order.shippingLastName}}</strong><br/>
         <strong>845 Market Street,</strong><br/>
         <strong>San Francisco, CA</strong><br/>
         <strong>94107</strong><br/>
@@ -105,7 +106,7 @@
     </mj-column>
   </mj-group>
 </mj-section>
-<mj-section>
+<mj-section padding-top="0px" padding-bottom="0px">
   <mj-column width="10%">
 
   </mj-column>
