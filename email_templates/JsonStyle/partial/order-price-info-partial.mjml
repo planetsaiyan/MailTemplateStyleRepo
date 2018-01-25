@@ -4,13 +4,13 @@
   </mj-text>
 </mj-section>
 <mj-section padding-top="0px" padding-bottom="0px">
-  <mj-column width="" background-color="">
+  <mj-column width="">
     <mj-image src="{{image.w300x200}}" padding="0px"/>
   </mj-column>
   <mj-column width="15%">
 
   </mj-column>
-  <mj-column width="35%" background-color="">
+  <mj-column width="35%">
     <mj-text>
       <strong>{{orderName}} Plan &#35;{{name}}</strong><br/>
       {{#each options}}
@@ -85,20 +85,20 @@
     </mj-column>
     <mj-column width="35%">
       <mj-text padding="0px">
-        <strong style="color:#7B9D29">Shipping To:</strong><br/>
+        <strong style="color:{{colors.colorText}}">Shipping To:</strong><br/>
         <strong>{{order.shippingFirstName}} {{order.shippingLastName}}</strong><br/>
-        <strong>845 Market Street,</strong><br/>
-        <strong>San Francisco, CA</strong><br/>
-        <strong>94107</strong><br/>
+        <strong>{{order.shippingAddress1}},</strong><br/>
+        <strong>{{order.shippingCity}}, {{order.shippingState}}</strong><br/>
+        <strong>{{order.shippingPostalCode}}</strong><br/>
       </mj-text>
     </mj-column>
     <mj-column width="35%">
       <mj-text padding="0px" align="right">
-        <strong style="color:#7B9D29">Billing to:</strong><br/>
-        <strong>Monika Chand</strong><br/>
-        <strong>845 Market Street,</strong><br/>
-        <strong>San Francisco, CA</strong><br/>
-        <strong>94107</strong><br/>
+        <strong style="color:{{colors.colorText}}">Billing to:</strong><br/>
+        <strong>{{paymentMethod.billingFirstName}} {{paymentMethod.billingLastName}}</strong><br/>
+        <strong>{{paymentMethod.billingAddress1}},</strong><br/>
+        <strong>{{paymentMethod.billingCity}}, {{paymentMethod.billingState}}</strong><br/>
+        <strong>{{paymentMethod.billingPostalCode}}</strong><br/>
       </mj-text>
     </mj-column>
     <mj-column width="15%">

@@ -14,7 +14,8 @@
     "colorText": "#7B9D29",
     "footerLinks": "#C36D1B",
     "containerBackground": "#fff",
-    "button": "#7B9D29"
+    "button": "#7B9D29",
+    "whiteText": "#fff"
   },
   "authTokenMail": {},
   "costToBuildFulFillmentMail": {},
@@ -96,16 +97,16 @@
     "shippingPhone": "415-123-5678"
   },
   "paymentMethod": {
-    "shippingFirstName": "",
-    "shippingLastName": "",
-    "shippingCompany": "",
-    "shippingAddress1": "",
-    "shippingAddress2": "",
-    "shippingCity": "",
-    "shippingState": "",
-    "shippingPostalCode": "",
-    "shippingCountry": "",
-    "shippingPhone": ""
+    "billingFirstName": "Monika",
+    "billingLastName": "Chand",
+    "billingCompany": "",
+    "billingAddress1": "845 Market Street",
+    "billingAddress2": "",
+    "billingCity": "San Francisco",
+    "billingState": "CA",
+    "billingPostalCode": "94107",
+    "billingCountry": "USA",
+    "billingPhone": "415-123-5678"
   }
 }
 

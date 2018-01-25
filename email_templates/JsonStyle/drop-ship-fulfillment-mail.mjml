@@ -32,7 +32,7 @@
 
       <mj-section>
         <mj-column>
-          <mj-button background-color="#7B9D29" color="white">
+          <mj-button background-color="{{colors.button}}" color="{{colors.whiteText}}">
             Track my order
           </mj-button>
         </mj-column>

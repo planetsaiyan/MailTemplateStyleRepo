@@ -53,6 +53,18 @@ gulp.task('runMjml', function() {
 
     });
 
+  gulp.watch('./JsonStyle/partial/*.mjml')
+    .on('change', function() {
+      gulp.src('./JsonStyle/*.mjml')
+      .pipe(mjml())
+      .pipe(gulp.dest('./JsonStyle/html-output'))
+    })
+    .on('add', function() {
+      gulp.src('./JsonStyle/*.mjml')
+      .pipe(mjml())
+      .pipe(gulp.dest('./JsonStyle/html-output'))
+    })
+
   gulp.watch('./JsonStyle/*.json')
     .on('change', function(path) {
       gulp.src('./JsonStyle/*.mjml')
