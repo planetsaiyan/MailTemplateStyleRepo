@@ -8,7 +8,10 @@
     "logo": "img/dhs_logo.png"
   },
   "footer": {
-    "salesEmail": "sales@dreamhomesource.com"
+    "salesEmail": "sales@dreamhomesource.com",
+    "storeFront": "Dream Home Source",
+    "copyRight": "Copyright 2017, Hanley Wood LLC. All rights reserved",
+    "year": "2017"
   },
   "colors": {
     "lightBackground": "#E0E2E3",

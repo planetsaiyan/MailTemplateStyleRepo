@@ -12,7 +12,7 @@
   </mj-column>
   <mj-column width="42%">
     <mj-text padding="0px" align="center" font-weight="500">
-      Dream Home Source 2017 - Questions?
+      {{footer.storeFront}} {{footer.year}} - Questions?
     </mj-text>
   </mj-column>
   <mj-column width="38%">
@@ -27,7 +27,7 @@
 <<mj-section padding-top="0px" background-color="{{colors.lightBackground}}">
   <mj-column>
     <mj-text padding="0px" align="center">
-      Copyright 2017, Hanley Wood LLC. All rights reserved
+      {{footer.copyRight}}
     </mj-text>
   </mj-column>
 </mj-section>
