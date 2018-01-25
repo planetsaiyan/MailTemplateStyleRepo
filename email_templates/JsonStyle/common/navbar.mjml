@@ -1,6 +1,6 @@
 <mj-navbar background-color="{{header.navbar.bgColor}}" padding="0">
   <mj-column>
-    <mj-inline-links base-url="https://mjml.io">
+    <mj-inline-links base-url="/">
       <mj-link padding-top="6px" padding-bottom="6px" href="/" color="{{header.navbar.linkColor}}">HOME</mj-link>
       <mj-link padding-top="6px" padding-bottom="6px" href="/search" color="{{header.navbar.linkColor}}">SEARCH</mj-link>
       <mj-link padding-top="6px" padding-bottom="6px" href="/collection/style" color="{{header.navbar.linkColor}}">STYLES</mj-link>
