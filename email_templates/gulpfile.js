@@ -53,17 +53,8 @@ gulp.task('runMjml', function() {
 
     });
 
-  gulp.watch('./JsonStyle/partial/*.mjml')
-    .on('change', function() {
-      gulp.src('./JsonStyle/*.mjml')
-      .pipe(mjml())
-      .pipe(gulp.dest('./JsonStyle/html-output'))
-    })
-    .on('add', function() {
-      gulp.src('./JsonStyle/*.mjml')
-      .pipe(mjml())
-      .pipe(gulp.dest('./JsonStyle/html-output'))
-    })
+  watchPartial();
+  watchCommon();
 
   gulp.watch('./JsonStyle/*.json')
     .on('change', function(path) {
@@ -87,6 +78,34 @@ gulp.task('runMjml', function() {
 
     });
 })
+
+function watchCommon() {
+  gulp.watch('./JsonStyle/common/*.mjml')
+  .on('change', function() {
+    gulp.src('./JsonStyle/*.mjml')
+    .pipe(mjml())
+    .pipe(gulp.dest('./JsonStyle/html-output'))
+  })
+  .on('add', function() {
+    gulp.src('./JsonStyle/*.mjml')
+    .pipe(mjml())
+    .pipe(gulp.dest('./JsonStyle/html-output'))
+  })
+}
+
+function watchPartial() {
+  gulp.watch('./JsonStyle/partial/*.mjml')
+  .on('change', function() {
+    gulp.src('./JsonStyle/*.mjml')
+    .pipe(mjml())
+    .pipe(gulp.dest('./JsonStyle/html-output'))
+  })
+  .on('add', function() {
+    gulp.src('./JsonStyle/*.mjml')
+    .pipe(mjml())
+    .pipe(gulp.dest('./JsonStyle/html-output'))
+  })
+}
 
 function styleHTML(filesrc, filename) {
   filesrc.replace('.html', '.hbs');

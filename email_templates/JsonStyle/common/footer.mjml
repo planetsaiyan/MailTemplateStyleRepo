@@ -1,7 +1,8 @@
 <mj-section padding-bottom="0px" background-color="{{colors.lightBackground}}">
   <mj-column>
     <mj-text padding="0px" align="center">
-      If you have questions, please contact: <span style="color:{{colors.footerLinks}};font-weight:500;">sales@dreamhomesource</span><br/>
+      If you have questions, please contact:
+      <a style="color:{{colors.footerLinks}};font-weight:500;" href="mailto:{{footer.salesEmail}}">{{footer.salesEmail}}</a><br/>
     </mj-text>
   </mj-column>
 </mj-section>

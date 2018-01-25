@@ -7,7 +7,9 @@
     "textColor": "#919699",
     "logo": "img/dhs_logo.png"
   },
-  "footer": {},
+  "footer": {
+    "salesEmail": "sales@dreamhomesource.com"
+  },
   "colors": {
     "lightBackground": "#E0E2E3",
     "darkBackground": "#919699",
