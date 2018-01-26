@@ -14,13 +14,13 @@
     <mj-text>
       <strong>{{orderName}} Plan &#35;{{name}}</strong><br/>
       {{#each options}}
-        <strong style="color:{{colors.colorText}}"><b>{{name}}:</b>&nbsp;&nbsp;{{description}}</strong><br/>
+        <strong style="color:{{../../colors.colorText}}"><b>{{name}}:</b>&nbsp;&nbsp;{{description}}</strong><br/>
       {{/each}}
     </mj-text>
   </mj-column>
   <mj-column width="35%">
     <mj-text align="right">
-      ${{priceTotal}} <br/>
+      <strong>${{priceTotal}}</strong><br/>
     </mj-text>
   </mj-column>
   <mj-column width="15%">
