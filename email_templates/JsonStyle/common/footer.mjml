@@ -17,7 +17,7 @@
   </mj-column>
   <mj-column width="38%">
     <mj-text padding="0px" align="center" font-weight="500">
-      call 1-800-888-8888
+      call {{footer.salesPhoneNumber}}
     </mj-text>
   </mj-column>
   <mj-column width="10%">

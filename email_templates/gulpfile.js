@@ -37,7 +37,7 @@ gulp.task('runMjml', function() {
     });
   gulp.watch('./JsonStyle/html-output/*.html')
     .on('change', function(path) {
-      reimportJsonStyle();
+      // reimportJsonStyle();
       var filename = path.split('/').pop();
       if(filename.indexOf('.json') < 0){
         styleHTML(path, filename.replace('.html', ''));
@@ -45,7 +45,7 @@ gulp.task('runMjml', function() {
 
     })
     .on('add', function(path) {
-      reimportJsonStyle();
+      // reimportJsonStyle();
       var filename = path.split('/').pop();
       if(filename.indexOf('.json') < 0){
         styleHTML(path, filename.replace('.html', ''));
@@ -58,6 +58,7 @@ gulp.task('runMjml', function() {
 
   gulp.watch('./JsonStyle/*.json')
     .on('change', function(path) {
+      styleJSON = JSON.parse(fs.readFileSync(path));
       gulp.src('./JsonStyle/*.mjml')
         .pipe(mjml())
         .pipe(gulp.dest('./JsonStyle/html-output'))
@@ -65,9 +66,9 @@ gulp.task('runMjml', function() {
       if(filename.indexOf('.json') < 0){
         styleHTML(path, filename.replace('.html', ''));
       }
-
     })
     .on('add', function(path) {
+      styleJSON = JSON.parse(fs.readFileSync(path));
       gulp.src('./JsonStyle/*.mjml')
         .pipe(mjml())
         .pipe(gulp.dest('./JsonStyle/html-output'))
@@ -75,7 +76,6 @@ gulp.task('runMjml', function() {
       if(filename.indexOf('.json') < 0){
         styleHTML(path, filename.replace('.html', ''));
       }
-
     });
 })
 
