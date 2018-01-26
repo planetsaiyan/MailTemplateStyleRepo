@@ -5,10 +5,10 @@
       "linkColor": "#000000"
     },
     "textColor": "#556fb9",
-    "logo": "https://www-stag.floorplans.com/public/img/logo.svg?v=30d61d12f5"
+    "logo": "https://www-stag.eplans.com/public/img/logo.svg?v=30d61d12f5"
   },
   "footer": {
-    "salesEmail": "sales@floorplans.com ",
+    "salesEmail": "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",
     "salesPhoneNumber": "1-877-803-2251",
     "storeFront": "Floorplans",
     "copyRight": "Copyright 2017, Hanley Wood LLC. All rights reserved",
