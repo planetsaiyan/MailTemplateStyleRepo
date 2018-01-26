@@ -19,7 +19,7 @@
     </mj-text>
   </mj-column>
   <mj-column width="35%">
-    <mj-text padding-right="0px" align="right">
+    <mj-text align="right">
       ${{priceTotal}} <br/>
     </mj-text>
   </mj-column>
