@@ -1,0 +1,84 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-text align="center" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-container background-color="#fff">
+      <mj-include path="./common/navbar" />
+      <mj-include path="./common/logo-header" />
+      <mj-section>
+        <mj-column>
+          <mj-text font-size="16px">
+            Hello<br/>
+          </mj-text>
+          <mj-text font-size="18px">
+            <strong>{{account.email}}</strong>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="{{colors.darkBackground}}" padding-bottom="10px" padding-top="10px">
+        <mj-column>
+          <mj-text color="#fff">
+            <span style="font-size:20px;">Thank you for your order!</span><br/>
+            Please find your order details below.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0px">
+        <mj-text padding="0px">
+        {{#each cartItemView}}
+        </mj-text>
+      </mj-section>
+      <mj-section>
+        <mj-column width="20%">
+
+        </mj-column>
+        <mj-column width="60%">
+          <mj-text align="left">
+            <strong>{{orderName}} Plan &#35;{{name}}</strong><br/>
+            {{#each options}}
+              <strong><b>{{name}}:</b>&nbsp;&nbsp;{{description}}</strong><br/>
+            {{/each}}
+            <strong>Price - ${{priceTotal}}</strong><br/>
+          </mj-text>
+        </mj-column>
+        <mj-column width="20%">
+
+        </mj-column>
+      </mj-section>
+      <mj-section padding="0px">
+        <mj-text padding="0px">
+          {{/each}}
+        </mj-text>
+      </mj-section>
+
+      <mj-section>
+        <mj-column width="20%">
+
+        </mj-column>
+        <mj-column width="60%">
+          <mj-text align="left">
+            <strong>Order Number -</strong> <span style="color:#919699">#{{dropShipFulfillment.vendorOrderItem.vendorOrder.order.id}}</span><br/>
+            <strong>Order Date -</strong> <span style="color:#919699">{{dropShipFulfillment.vendorOrderItem.vendorOrder.order.orderDate}}</span><br/>
+            <strong>Total Price -</strong> <span style="color:#919699">${{orderView.total}}</span><br/>
+          </mj-text>
+        </mj-column>
+        <mj-column width="20%">
+
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column>
+          <mj-button background-color="{{colors.button}}" color="white">
+            Download PDF
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-include path="./common/footer" />
+    </mj-container>
+  </mj-body>
+</mjml>

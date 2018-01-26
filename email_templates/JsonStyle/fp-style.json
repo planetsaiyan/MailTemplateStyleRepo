@@ -1,10 +1,10 @@
 {
   "header": {
     "navbar": {
-      "bgColor": "#B39EB3",
+      "bgColor": "#E0E2E3",
       "linkColor": "#000000"
     },
-    "textColor": "#556fb9",
+    "textColor": "#919699",
     "logo": "https://www-stag.floorplans.com/public/img/logo.svg?v=30d61d12f5"
   },
   "footer": {
@@ -15,12 +15,12 @@
     "year": "2017"
   },
   "colors": {
-    "lightBackground": "#B39EB3",
-    "darkBackground": "#694268",
-    "colorText": "#556fb9",
-    "footerLinks": "#fff",
+    "lightBackground": "#E0E2E3",
+    "darkBackground": "#734B73",
+    "colorText": "#734B73",
+    "footerLinks": "#734B73",
     "containerBackground": "#fff",
-    "button": "#714872",
+    "button": "#734B73",
     "whiteText": "#fff"
   },
   "authTokenMail": {},
@@ -85,7 +85,8 @@
     "vendorOrderItem": {
       "vendorOrder": {
         "order": {
-          "id": "563891"
+          "id": "563891",
+          "orderDate": "12/25/2017"
         }
       }
     }
@@ -113,5 +114,8 @@
     "billingPostalCode": "94107",
     "billingCountry": "USA",
     "billingPhone": "415-123-5678"
+  },
+  "account": {
+    "email": "hhy@hanleywood.com"
   }
 }

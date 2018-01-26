@@ -14,7 +14,7 @@
     <mj-text>
       <strong>{{orderName}} Plan &#35;{{name}}</strong><br/>
       {{#each options}}
-        <strong><b>{{name}}:</b>&nbsp;&nbsp;{{description}}</strong><br/>
+        <strong style="color:{{colors.colorText}}"><b>{{name}}:</b>&nbsp;&nbsp;{{description}}</strong><br/>
       {{/each}}
     </mj-text>
   </mj-column>

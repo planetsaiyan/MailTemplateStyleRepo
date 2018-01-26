@@ -1,10 +1,10 @@
 {
   "header": {
     "navbar": {
-      "bgColor": "#F7941E",
+      "bgColor": "#E0E2E3",
       "linkColor": "#000000"
     },
-    "textColor": "#1d84be",
+    "textColor": "#919699",
     "logo": "https://www-stag.eplans.com/public/img/logo.svg?v=30d61d12f5"
   },
   "footer": {
@@ -15,12 +15,12 @@
     "year": "2017"
   },
   "colors": {
-    "lightBackground": "#F7941E",
-    "darkBackground": "#1d84be",
-    "colorText": "#1d84be",
-    "footerLinks": "#fff",
+    "lightBackground": "#E0E2E3",
+    "darkBackground": "#0086C0",
+    "colorText": "#0086C0",
+    "footerLinks": "#0086C0",
     "containerBackground": "#fff",
-    "button": "#1d84be",
+    "button": "#0086C0",
     "whiteText": "#fff"
   },
   "authTokenMail": {},
